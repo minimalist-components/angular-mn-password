@@ -14,7 +14,9 @@ body
   form(ng-controller='IndexController as controller' name='form' novalidate ng-submit='controller.validate()')
     h2 mn-password
     div
-      mn-password(placeholder='Password' ng-model='controller.credentials.passowrd' name='password')
+      mn-password(placeholder='Password' ng-model='controller.credentials.password' name='password')
+
+      p password: {{ controller.credentials.password }}
     
     button(type='submit') Submit
 
