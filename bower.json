@@ -1,6 +1,5 @@
 {
   "name": "angular-mn-password",
-  "version": "0.0.1",
   "description": "An angular directive to mn-password",
   "main": [
     "dist/angular-mn-password.js",
