@@ -1,0 +1,38 @@
+html(ng-app='app')
+  meta(name='viewport' content='width=device-width, user-scalable=no')
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css')
+
+  block styles
+    link(rel='stylesheet' href='docs/vendor.css')
+
+body(ng-controller='IndexController as controller')
+  h2 angular-mn-password
+  include github-corner
+
+  .mn-layout-fullscreen.mn-layout-centered
+    .mn-layout-container
+      mn-form.mn-layout-column.mn-layout-sm-row
+        mn-password.flex#password(placeholder='password' ng-model='controller.credentials.password')
+        mn-password.flex#confirm-password(placeholder='confirm password' ng-model='controller.passwordConfirm')
+        //- button.mn-button submit
+
+
+  block scripts
+    script(src='docs/vendor.js')
+    script(src='dist/angular-mn-password.js')
+
+  script.
+    angular.module('app', [
+      'mn-password',
+    ])
+
+    angular
+      .module('app')
+      .controller('IndexController', IndexController);
+
+    function IndexController() {
+      this.credentials = {
+        password: undefined
+      }
+    }
+

@@ -1,28 +1,50 @@
 {
   "name": "angular-mn-password",
-  "private": true,
-  "version": "0.0.2",
-  "description": "",
+  "version": "0.0.1",
+  "description": "An angular directive to mn-password",
+  "main": "dist/angular-mn-password.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "scripts/start.sh",
+    "bundle": "scripts/bundle.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Darlan Mendonça <darlanmendonca@gmail.com>",
+  "keywords": [
+    "minimalist",
+    "webcomponent",
+    "password",
+    "input",
+    "angular",
+    "directive"
+  ],
+  "author": "Darlan Mendonça <darlanmendonca@gmail.com> (https://github.com/darlanmendonca)",
   "license": "MIT",
+  "homepage": "https://minimalist-components.github.io/angular-mn-password/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minimalist-components/angular-angular-mn-password.git"
+  },
+  "bugs": {
+    "url": "https://github.com/minimalist-components/angular-angular-mn-password/issues"
+  },
+  "dependencies": {
+    "angular": "^1.6.1",
+    "mn-password": "^0.0.2"
+  },
   "devDependencies": {
     "babel-preset-es2015": "^6.14.0",
-    "bower-files": "^3.14.1",
     "browser-sync": "^2.14.0",
     "compression": "^1.6.2",
     "connect-history-api-fallback": "^1.3.0",
-    "eslint-config-angular-mn-component": "0.0.1",
+    "eslint-config-angular-mn-component": "^0.0.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^2.3.2",
     "gulp-concat": "^2.6.0",
     "gulp-eslint": "^3.0.1",
-    "gulp-inject": "^4.1.0",
     "gulp-jade": "^1.1.0",
     "gulp-minify-css": "^1.2.4",
     "gulp-ng-annotate": "^2.0.0",
@@ -32,6 +54,10 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-sync": "^0.1.4",
     "gulp-uglify": "^2.0.0",
+    "mn-button": "^0.0.4",
+    "mn-form": "^0.0.1",
+    "mn-gh-page": "git+https://github.com/minimalist-components/gh-page.git",
+    "package-files": "^0.0.5",
     "require-all": "^2.0.0"
   }
 }
