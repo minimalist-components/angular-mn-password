@@ -16,6 +16,27 @@ body(ng-controller='IndexController as controller')
         mn-password.flex#confirm-password(placeholder='confirm password' ng-model='controller.passwordConfirm')
         //- button.mn-button submit
 
+  .docs.mn-layout-container
+    mn-code.sh.
+      npm install --save angular-mn-password
+
+    p And bundle dependencies and main files in <strong>dist/</strong> with your preferred tool.
+
+    h3 usage
+    mn-code.js.
+      // add dependency in you module
+      angular.module('app', [
+        'mn-password'
+      ])
+
+    p And then, in your html, you can use the tag <strong>mn-password</strong> with attr <strong>ng-model</strong>
+
+    mn-code.html.
+      <mn-password placeholder="Password" ng-model='password'></mn-password>
+
+    p For more details check <a href="https://github.com/minimalist-components/mn-password">mn-password docs</a>.
+
+
 
   block scripts
     script(src='docs/vendor.js')
