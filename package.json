@@ -1,6 +1,6 @@
 {
   "name": "angular-mn-password",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "An angular directive to mn-password",
   "main": "dist/angular-mn-password.js",
   "files": [
@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "angular": "^1.6.1",
-    "mn-password": "^0.0.3"
+    "mn-password": "~0.0.4"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.14.0",
